@@ -7,7 +7,7 @@ interface SearchInputProps {
 }
 
 export default function SearchInput({
-  placeholder = "Search...",
+  placeholder = "Buscar",
   value,
   onChange,
 }: SearchInputProps) {
