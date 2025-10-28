@@ -1,11 +1,25 @@
 "use client";
 
-import { FacebookLogo, InstagramLogo, X } from "@phosphor-icons/react";
+import { FacebookLogo, InstagramLogo, XLogo } from "@phosphor-icons/react";
 import SearchInput from "./components/search-input";
 import PostCard from "./components/post-card";
 
 export default function Home() {
   const posts = [
+    {
+      title: "Comece pelo simples: 5 trocas inteligentes para uma alimentação mais saudável.",
+      description: "Pequenas mudanças fazem uma grande diferença! Descubra como substituir alimentos do dia a dia por opções mais nutritivas, sem abrir mão do sabor.",
+      date: "28 Oct 2025",
+      imageUrl: "/nutri-img.jpg",
+      link: "/posts/10-receitas-saudaveis",
+    },
+    {
+      title: "Comece pelo simples: 5 trocas inteligentes para uma alimentação mais saudável.",
+      description: "Pequenas mudanças fazem uma grande diferença! Descubra como substituir alimentos do dia a dia por opções mais nutritivas, sem abrir mão do sabor.",
+      date: "28 Oct 2025",
+      imageUrl: "/nutri-img.jpg",
+      link: "/posts/10-receitas-saudaveis",
+    },
     {
       title: "Comece pelo simples: 5 trocas inteligentes para uma alimentação mais saudável.",
       description: "Pequenas mudanças fazem uma grande diferença! Descubra como substituir alimentos do dia a dia por opções mais nutritivas, sem abrir mão do sabor.",
@@ -36,7 +50,7 @@ export default function Home() {
             rel="noopener noreferrer"
             aria-label="X"
           >
-            <X
+            <XLogo
               size={24}
               weight="bold"
               className="text-[#C69168] hover:opacity-50 transition-opacity"
