@@ -1,3 +1,6 @@
+"use client";
+
+import { FacebookLogo, InstagramLogo, X } from "@phosphor-icons/react";
 import SearchInput from "./components/search-input";
 
 export default function Home() {
@@ -6,6 +9,7 @@ export default function Home() {
       <div className="flex justify-end w-full">
         <SearchInput />
       </div>
+
       <section className="text-center max-w-2xl">
         <h1 className="text-5xl font-amatic font-bold text-[#9DAB91] mb-2">
           Seu progresso começa no prato!
@@ -13,6 +17,45 @@ export default function Home() {
         <p className="text-[#C69168] text-sm font-poppins mb-6">
           Receitas, mitos e verdades: tudo o que você precisa para comer bem.
         </p>
+
+        <div className="flex justify-center items-center space-x-4 w-full">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X"
+          >
+            <X
+              size={24}
+              weight="bold"
+              className="text-[#C69168] hover:opacity-50 transition-opacity"
+            />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <InstagramLogo
+              size={24}
+              weight="bold"
+              className="text-[#C69168] hover:opacity-50 transition-opacity"
+            />
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <FacebookLogo
+              size={24}
+              weight="bold"
+              className="text-[#C69168] hover:opacity-50 transition-opacity"
+            />
+          </a>
+        </div>
       </section>
     </main>
   );
