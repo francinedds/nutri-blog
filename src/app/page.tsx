@@ -57,6 +57,8 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      <hr className="border-t border-[#9DAB91] w-[900px] my-4" />
     </main>
   );
 }
