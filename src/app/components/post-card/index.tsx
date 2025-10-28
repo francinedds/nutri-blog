@@ -38,7 +38,7 @@ export default function PostCard({
           <h2 className="text-sm font-semibold text-gray-800">
             {title}
           </h2>
-          <p className="text-sm text-gray-600">{description}</p>
+          <p className="text-sm text-gray-600 text-justify">{description}</p>
         </div>
       </Link>
     </div>
