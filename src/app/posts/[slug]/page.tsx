@@ -24,7 +24,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       </Link>
 
       <article className="w-full max-w-[700px] mx-auto space-y-4">
-        <h2 className="text-center text-xl font-bold mb-2">{post.title}</h2>
+        <h2 className="text-center text-xl font-semibold mb-2">{post.title}</h2>
         <Image
           src="/nutri-img.jpg"
           alt="Imagem Nutricional"
