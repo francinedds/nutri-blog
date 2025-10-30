@@ -7,12 +7,12 @@ export async function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export default function PostPage({ params }: { params: { slug: string } }) {
-  const post = getPostBySlug(params.slug);
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const post = getPostBySlug((await params).slug);
 
   if (!post) return notFound();
 
-  console.log(params);
+  console.log(post);
 
   return (
     <article className="prose mx-auto">
