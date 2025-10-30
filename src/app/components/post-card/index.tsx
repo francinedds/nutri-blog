@@ -28,17 +28,17 @@ export default function PostCard({
               src={imageUrl}
               alt={title}
               fill
-              className="object-cover"
+              className="object-cover p-3 rounded-2xl"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
           </div>
         )}
         <div className="p-4 flex flex-col space-y-2">
-          {date && <span className="text-xs text-gray-500">{date}</span>}
           <h2 className="text-sm font-semibold text-gray-800">
             {title}
           </h2>
           <p className="text-sm text-gray-600 text-justify">{description}</p>
+          {date && <span className="flex justify-end text-xs">{date}</span>}
         </div>
       </Link>
     </div>
