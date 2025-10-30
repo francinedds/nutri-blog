@@ -1,4 +1,7 @@
 import { getAllPosts, getPostBySlug } from "@/app/lib/getPosts";
+import { CircleArrowLeft } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 import { notFound } from "next/navigation";
 
@@ -15,10 +18,23 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   console.log(post);
 
   return (
-    <article className="prose mx-auto">
-      <h1>{post.title}</h1>
-      <p>{post.description}</p>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
-    </article>
+    <main className="flex flex-col grow bg-[#F8F7F2] w-full">
+      <Link href="/" className="p-6">
+        <CircleArrowLeft size={36} color="#9DAB91" />
+      </Link>
+
+      <article className="text-center w-full max-w-xl mx-auto space-y-4">
+        <h2 className="text-2xl font-bold mb-4">{post.title}</h2>
+        <Image
+          src="/nutri-img.jpg"  
+          alt="Imagem Nutricional"
+          width={500}                
+          height={300}               
+          className="rounded-lg mb-4 mx-auto"     
+        />
+        <p className="mb-4">{post.description}</p>
+        <div dangerouslySetInnerHTML={{ __html: post.content }} className="whitespace-pre-line" />
+      </article>
+    </main>
   );
 }

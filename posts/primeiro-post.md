@@ -5,10 +5,10 @@ date: "30-10-2025"
 image: "/nutri-img.jpg"
 ---
 
-## Então anote essas dicas:
+Então anote essas dicas:
 
-- Trocar refrigerante por água com gás + limão
-- Trocar arroz branco por arroz integral ou mix de grãos
-- Trocar biscoitos recheados por frutas com pasta de amendoim
-- Trocar pão francês por pão integral com grãos
-- Trocar snacks industrializados por oleaginosas (castanhas, nozes)
+Trocar refrigerante por água com gás + limão
+Trocar arroz branco por arroz integral ou mix de grãos
+Trocar biscoitos recheados por frutas com pasta de amendoim
+Trocar pão francês por pão integral com grãos
+Trocar snacks industrializados por oleaginosas (castanhas, nozes)
