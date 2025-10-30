@@ -1,7 +1,7 @@
 import SearchInput from "./components/search-input";
 import PostCard from "./components/post-card";
 import { getAllPosts } from "@/app/lib/getPosts";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { XLogo, InstagramLogo, FacebookLogo } from "@phosphor-icons/react/ssr";
 
 export default function Home() {
 
@@ -28,8 +28,9 @@ export default function Home() {
             rel="noopener noreferrer"
             aria-label="X"
           >
-            <Twitter
+            <XLogo
               size={24}
+              weight="bold"
               className="text-[#C69168] hover:opacity-50 transition-opacity"
             />
           </a>
@@ -39,8 +40,9 @@ export default function Home() {
             rel="noopener noreferrer"
             aria-label="Instagram"
           >
-            <Instagram
+            <InstagramLogo
               size={24}
+              weight="bold"
               className="text-[#C69168] hover:opacity-50 transition-opacity"
             />
           </a>
@@ -50,8 +52,9 @@ export default function Home() {
             rel="noopener noreferrer"
             aria-label="Facebook"
           >
-            <Facebook
+            <FacebookLogo
               size={24}
+              weight="bold"
               className="text-[#C69168] hover:opacity-50 transition-opacity"
             />
           </a>
