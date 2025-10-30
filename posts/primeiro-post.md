@@ -1,9 +1,8 @@
 ---
 title: "Comece pelo simples: 5 trocas inteligentes para uma alimentação mais saudável."
 description: "Pequenas mudanças fazem uma grande diferença! Descubra como substituir alimentos do dia a dia por opções mais nutritivas, sem abrir mão do sabor."
-date: "2025-10-28"
+date: "30-10-2025"
 image: "/nutri-img.jpg"
-link: "/posts/10-receitas-saudaveis"
 ---
 
 ## Então anote essas dicas:
