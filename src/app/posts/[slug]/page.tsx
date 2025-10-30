@@ -23,7 +23,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         <CircleArrowLeft size={40} className="text-[#9DAB91] hover:opacity-50 transition-opacity" />
       </Link>
 
-      <article className="w-full max-w-[700px] mx-auto space-y-4">
+      <article className="w-full max-w-[700px] mx-auto px-4 sm:px-6 space-y-4">
         <h2 className="text-center text-xl font-semibold mb-2">{post.title}</h2>
         <Image
           src="/nutri-img.jpg"
