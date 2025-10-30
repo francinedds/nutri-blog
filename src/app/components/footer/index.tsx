@@ -15,7 +15,7 @@ export default function Footer() {
           />
         </Link>
 
-        <div className="flex flex-wrap justify-center gap-32">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-10">
           <Link href="/terms" className="text-sm text-white hover:underline">
             Termos de Uso
           </Link>
