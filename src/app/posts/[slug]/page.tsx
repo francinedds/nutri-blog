@@ -28,9 +28,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         <Image
           src="/nutri-img.jpg"
           alt="Imagem Nutricional"
-          width={500}
-          height={300}
-          className="rounded-lg mb-4 mx-auto"
+          width={200}
+          height={200}
+          className="w-full h-[300px] object-cover rounded-lg mb-4 mx-auto"
         />
         <p className="flex text-justify font-semibold mb-4">{post.description}</p>
         <div dangerouslySetInnerHTML={{ __html: post.content }} className="whitespace-pre-line" />
