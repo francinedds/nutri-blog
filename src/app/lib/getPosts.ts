@@ -10,6 +10,7 @@ export type Post = {
   image?: string;
   link?: string;
   content: string;
+  author?: string;
 };
 
 const postsDirectory = path.join(process.cwd(), "posts");
@@ -30,7 +31,9 @@ export function getAllPosts(): Post[] {
       date: data.date ?? "",
       image: data.image ?? "",
       link: data.link ?? "",
+      author: data.author ?? "",
       content,
+      
     };
   });
 }
@@ -47,6 +50,7 @@ export function getPostBySlug(slug: string): Post {
     date: data.date ?? "",
     image: data.image ?? "",
     link: data.link ?? "",
+    author: data.author ?? "",
     content,
   };
 }

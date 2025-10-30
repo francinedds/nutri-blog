@@ -20,23 +20,23 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   return (
     <main className="flex flex-col grow bg-[#F8F7F2] w-full">
       <Link href="/" className="p-6">
-        <CircleArrowLeft size={40} className="text-[#9DAB91] hover:opacity-50 transition-opacity"/>
+        <CircleArrowLeft size={40} className="text-[#9DAB91] hover:opacity-50 transition-opacity" />
       </Link>
 
-      <article className="text-center w-full max-w-[800px] mx-auto space-y-4">
-        <h2 className="text-xl font-bold mb-4">{post.title}</h2>
+      <article className="w-full max-w-[700px] mx-auto space-y-4">
+        <h2 className="text-center text-xl font-bold mb-2">{post.title}</h2>
         <Image
-          src="/nutri-img.jpg"  
+          src="/nutri-img.jpg"
           alt="Imagem Nutricional"
-          width={500}                
-          height={300}               
-          className="rounded-lg mb-4 mx-auto"     
+          width={500}
+          height={300}
+          className="rounded-lg mb-4 mx-auto"
         />
-        <p className="mb-4">{post.description}</p>
+        <p className="flex text-justify font-semibold mb-4">{post.description}</p>
         <div dangerouslySetInnerHTML={{ __html: post.content }} className="whitespace-pre-line" />
-        
-        <div className="flex justify-end">
-          <p>Criado em: {post.date}</p>
+
+        <div className="flex justify-end text-sm uppercase">
+          <p><span className="font-semibold">Criado por:</span> {post.author} <span className="font-semibold">em</span> {post.date}</p>
         </div>
       </article>
     </main>

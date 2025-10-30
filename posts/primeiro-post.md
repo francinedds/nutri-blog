@@ -3,6 +3,7 @@ title: "Comece pelo simples: 5 trocas inteligentes para uma alimentação mais s
 description: "Pequenas mudanças fazem uma grande diferença! Descubra como substituir alimentos do dia a dia por opções mais nutritivas, sem abrir mão do sabor."
 date: "30-10-2025"
 image: "/nutri-img.jpg"
+author: "Francine Danielle"
 ---
 
 Então anote essas dicas:
