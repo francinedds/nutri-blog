@@ -1,35 +1,11 @@
-import { FacebookLogo, InstagramLogo, XLogo } from "@phosphor-icons/react";
 import SearchInput from "./components/search-input";
 import PostCard from "./components/post-card";
 import { getAllPosts } from "@/app/lib/getPosts";
+import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export default function Home() {
 
   const posts = getAllPosts();
-
-  // const posts = [
-  //   {
-  //     title: "Comece pelo simples: 5 trocas inteligentes para uma alimentação mais saudável.",
-  //     description: "Pequenas mudanças fazem uma grande diferença! Descubra como substituir alimentos do dia a dia por opções mais nutritivas, sem abrir mão do sabor.",
-  //     date: "28 Oct 2025",
-  //     imageUrl: "/nutri-img.jpg",
-  //     link: "/posts/10-receitas-saudaveis",
-  //   },
-  //   {
-  //     title: "Comece pelo simples: 5 trocas inteligentes para uma alimentação mais saudável.",
-  //     description: "Pequenas mudanças fazem uma grande diferença! Descubra como substituir alimentos do dia a dia por opções mais nutritivas, sem abrir mão do sabor.",
-  //     date: "28 Oct 2025",
-  //     imageUrl: "/nutri-img.jpg",
-  //     link: "/posts/10-receitas-saudaveis",
-  //   },
-  //   {
-  //     title: "Comece pelo simples: 5 trocas inteligentes para uma alimentação mais saudável.",
-  //     description: "Pequenas mudanças fazem uma grande diferença! Descubra como substituir alimentos do dia a dia por opções mais nutritivas, sem abrir mão do sabor.",
-  //     date: "28 Oct 2025",
-  //     imageUrl: "/nutri-img.jpg",
-  //     link: "/posts/10-receitas-saudaveis",
-  //   },
-  // ];
 
   return (
     <main className="flex flex-col items-center grow bg-[#F8F7F2] px-6 py-6 space-y-10 w-full">
@@ -45,16 +21,15 @@ export default function Home() {
           Receitas, mitos e verdades: tudo o que você precisa para comer bem.
         </p>
 
-        {/* <div className="flex justify-center items-center space-x-4 w-full">
+        <div className="flex justify-center items-center space-x-4 w-full">
           <a
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="X"
           >
-            <XLogo
+            <Twitter
               size={24}
-              weight="bold"
               className="text-[#C69168] hover:opacity-50 transition-opacity"
             />
           </a>
@@ -64,9 +39,8 @@ export default function Home() {
             rel="noopener noreferrer"
             aria-label="Instagram"
           >
-            <InstagramLogo
+            <Instagram
               size={24}
-              weight="bold"
               className="text-[#C69168] hover:opacity-50 transition-opacity"
             />
           </a>
@@ -76,13 +50,12 @@ export default function Home() {
             rel="noopener noreferrer"
             aria-label="Facebook"
           >
-            <FacebookLogo
+            <Facebook
               size={24}
-              weight="bold"
               className="text-[#C69168] hover:opacity-50 transition-opacity"
             />
           </a>
-        </div> */}
+        </div>
       </section>
 
       <hr className="border-t border-[#9DAB91] w-[900px]" />
