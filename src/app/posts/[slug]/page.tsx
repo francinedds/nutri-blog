@@ -23,7 +23,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         <CircleArrowLeft size={40} className="text-[#9DAB91] hover:opacity-50 transition-opacity"/>
       </Link>
 
-      <article className="text-center w-full max-w-xl mx-auto space-y-4">
+      <article className="text-center w-full max-w-[800px] mx-auto space-y-4">
         <h2 className="text-xl font-bold mb-4">{post.title}</h2>
         <Image
           src="/nutri-img.jpg"  
@@ -34,6 +34,10 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         />
         <p className="mb-4">{post.description}</p>
         <div dangerouslySetInnerHTML={{ __html: post.content }} className="whitespace-pre-line" />
+        
+        <div className="flex justify-end">
+          <p>Criado em: {post.date}</p>
+        </div>
       </article>
     </main>
   );
