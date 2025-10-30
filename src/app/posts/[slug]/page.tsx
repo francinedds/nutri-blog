@@ -20,7 +20,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   return (
     <main className="flex flex-col grow bg-[#F8F7F2] w-full">
       <Link href="/" className="p-6">
-        <CircleArrowLeft size={36} color="#9DAB91" />
+        <CircleArrowLeft size={40} className="text-[#9DAB91] hover:opacity-50 transition-opacity"/>
       </Link>
 
       <article className="text-center w-full max-w-xl mx-auto space-y-4">
