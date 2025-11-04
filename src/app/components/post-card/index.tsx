@@ -38,7 +38,7 @@ export default function PostCard({
           <p className="text-sm text-gray-600 text-justify grow overflow-hidden text-ellipsis">
             {description}
           </p>
-          {date && <span className="flex justify-end text-xs">{date}</span>}
+          {date && <span className="flex justify-end text-xs text-[#C69168]">{date}</span>}
         </div>
       </Link>
     </div>
