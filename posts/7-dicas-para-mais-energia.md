@@ -5,7 +5,6 @@ date: "03-11-2025"
 image: "/nutri-img-2.jpg"
 author: "Francine Danielle"
 ---
-
 1. Comece o dia com um café da manhã equilibrado
 
 Evite pular o café da manhã! Combine carboidratos complexos, proteínas e gorduras boas.  
