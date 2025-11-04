@@ -35,7 +35,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         <p className="flex text-justify font-semibold mb-4">{post.description}</p>
         <div dangerouslySetInnerHTML={{ __html: post.content }} className="whitespace-pre-line" />
 
-        <div className="flex justify-end text-sm mt-10">
+        <div className="flex justify-end text-sm mt-10 mb-10">
           <p><span className="font-semibold">Criado por:</span> {post.author} <span className="font-semibold">em</span> {post.date}</p>
         </div>
       </article>
