@@ -1,5 +1,5 @@
 import { getAllPosts, getPostBySlug } from "@/app/lib/getPosts";
-import { ArrowCircleLeftIcon } from "@phosphor-icons/react/ssr";
+import { ArrowLeftIcon } from "@phosphor-icons/react/ssr";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -19,8 +19,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   return (
     <main className="flex flex-col grow bg-[#F8F7F2] w-full">
-      <Link href="/" className="p-6">
-        <ArrowCircleLeftIcon size={40} className="text-[#9DAB91] hover:opacity-50 transition-opacity" />
+      <Link
+        href="/"
+        className="flex items-center gap-2 p-6 text-[#9DAB91] hover:opacity-70 transition-opacity"
+      >
+        <ArrowLeftIcon size={30} />
+        <span className="font-medium">Voltar</span>
       </Link>
 
       <article className="w-full max-w-[700px] mx-auto px-4 sm:px-6 space-y-4">
