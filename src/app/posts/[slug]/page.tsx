@@ -26,7 +26,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       <article className="w-full max-w-[700px] mx-auto px-4 sm:px-6 space-y-4">
         <h2 className="text-center text-xl font-semibold mb-2">{post.title}</h2>
         <Image
-          src="/nutri-img.jpg"
+          src={post.image}
           alt="Imagem Nutricional"
           width={200}
           height={200}
