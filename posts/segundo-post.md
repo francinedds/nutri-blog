@@ -2,7 +2,7 @@
 title: "7 Dicas para ter mais energia no dia a dia."
 description: "Manter uma alimentação equilibrada não precisa ser complicado — pequenas mudanças já fazem uma grande diferença no seu nível de energia e bem-estar. Confira essas dicas simples e eficazes para nutrir seu corpo e manter o pique ao longo do dia!"
 date: "03-11-2025"
-image: "/nutri-img.jpg"
+image: "/nutri-img-2.jpg"
 author: "Francine Danielle"
 ---
 
