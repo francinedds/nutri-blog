@@ -9,17 +9,19 @@ import PostCard from "@/app/components/post-card";
 export default function PostList({ posts }: { posts: Post[] }) {
   const [query, setQuery] = useState("");
 
+  // Essa função serve pra padronizar o texto, tanto o que vem dos posts quanto o que o usuário digita, pra deixar a busca mais inteligente.
   const normalize = (s: string) =>
     s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-
-  const filteredPosts = useMemo(() => {
-    const q = normalize(query);
+  
+  // useMemo é um hook do React que evita recalcular uma operação pesada toda vez que o componente atualiza (ou seja, quando o filtro mudar), caso contrário, reaproveita o resultado anterior.
+  const filteredPosts = useMemo(() => { 
+    const q = normalize(query); // Cada post é verificado. Ele passa no filtro se qualquer destas condições for verdadeira. O operador || significa "ou" — então basta uma delas bater.
     return posts.filter(
-      (p) =>
-        normalize(p.title).includes(q) ||
+      (p) => 
+        normalize(p.title).includes(q) || 
         normalize(p.slug).includes(q) ||
         normalize(p.description ?? "").includes(q)
-    );
+    ); 
   }, [posts, query]);
 
   return (
