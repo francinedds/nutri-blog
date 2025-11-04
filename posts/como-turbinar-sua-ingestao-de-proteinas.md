@@ -1,5 +1,5 @@
 ---
-title: "Dicas rápidas para turbinar sua ingestão de proteínas"
+title: "Dicas rápidas para turbinar sua ingestão de proteínas."
 description: "As proteínas são essenciais para manter os músculos fortes, dar saciedade e ajudar na recuperação do corpo. Mas nem sempre é fácil chegar na quantidade ideal, né? Aqui vão algumas dicas simples:"
 date: "04-11-2025"
 image: "/nutri-img-3.jpg"
