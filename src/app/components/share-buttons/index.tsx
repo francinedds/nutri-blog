@@ -78,7 +78,7 @@ export default function ShareBox() {
           </a>
           <button
             onClick={handleCopy}
-            className="hover:opacity-60 transition-transform duration-300"
+            className="transition-transform duration-300"
             aria-label="Copiar link"
           >
             {copied ? (
@@ -146,7 +146,7 @@ export default function ShareBox() {
             </a>
             <button
               onClick={handleCopy}
-              className="hover:opacity-60 transition-transform duration-300"
+              className="transition-transform duration-300"
               aria-label="Copiar link"
             >
               {copied ? (
