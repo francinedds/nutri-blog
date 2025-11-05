@@ -4,7 +4,7 @@ Blog de nutrição criado com Next.js.
 
 ## Sobre
 
-Após concluir o Módulo 2 do curso de Next.js da Rocketseat, cujo desafio envolvia criar uma landing page e um blog, decidi desenvolver o meu próprio projeto para colocar em prática o que aprendi.
+Após concluir o Módulo 1 do curso de Next.js da Rocketseat, cujo desafio envolvia criar uma landing page e um blog, decidi desenvolver o meu próprio projeto para colocar em prática o que aprendi.
 O **Our Helth** traz dicas práticas (fictícias!) sobre alimentação saudável, nutrição e bem-estar, com um layout simples, moderno e acolhedor, além de ser otimizado para performance com Next.js.
 
 ## Tecnologias utilizadas
