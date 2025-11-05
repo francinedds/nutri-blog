@@ -76,21 +76,26 @@ export default function ShareBox() {
               className="hover:opacity-60 transition-opacity"
             />
           </a>
-
           <button
             onClick={handleCopy}
-            className="hover:opacity-60 transition-opacity"
+            className="hover:opacity-60 transition-transform duration-300"
             aria-label="Copiar link"
           >
-            <LinkSimpleHorizontalIcon size={24} weight="bold" />
+            {copied ? (
+              <CheckCircleIcon
+                size={24}
+                weight="fill"
+                className="text-[#C69168] scale-110 transition-transform duration-300"
+              />
+            ) : (
+              <LinkSimpleHorizontalIcon
+                size={24}
+                weight="bold"
+                className="transition-transform duration-300"
+              />
+            )}
           </button>
         </div>
-
-        {copied && (
-          <span className="text-xs text-[#9DAB91] font-poppins mt-2">
-            Copiado!
-          </span>
-        )}
       </aside>
 
       {/* Mobile */}
