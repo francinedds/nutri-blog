@@ -2,6 +2,7 @@ import { getAllPosts, getPostBySlug } from "@/app/lib/getPosts";
 import { ArrowLeftIcon } from "@phosphor-icons/react/ssr";
 import Image from "next/image";
 import Link from "next/link";
+import ShareButtons from "@/app/components/share-buttons";
 
 import { notFound } from "next/navigation";
 
@@ -43,6 +44,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           <p><span className="font-semibold">Criado por:</span> {post.author} <span className="font-semibold">em</span> {post.date}</p>
         </div>
       </article>
+
+      <ShareButtons />
     </main>
   );
 }
